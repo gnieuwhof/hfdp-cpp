@@ -1,88 +1,12 @@
+#include "Espresso.h"
+#include "HouseBlend.h"
+#include "Mocha.h"
+
 #include <iostream>
 #include <limits>
 #include <string>
 
 using namespace std;
-
-class Beverage
-{
-    protected:
-        string description;
-
-    public:
-        Beverage()
-        {
-            description = "Unknown beverage";
-        }
-
-        virtual string getDescription()
-        {
-            return description;
-        }
-
-        virtual double cost() = 0;
-};
-
-class CondimentBeverage: public Beverage
-{
-    public:
-        virtual string getDescription() = 0;
-};
-
-class Espresso: public Beverage
-{
-    public:
-        Espresso()
-        {
-            description = "Espresso";
-        }
-
-        double cost()
-        {
-            return 1.99;
-        }
-};
-
-class HouseBlend: public Beverage
-{
-    public:
-        HouseBlend()
-        {
-            description = "House Blend Coffee";
-        }
-
-        double cost()
-        {
-            return .99;
-        }
-};
-
-class Mocha: public CondimentBeverage
-{
-    private:
-        Beverage * beverage;
-
-    public:
-        ~Mocha()
-        {
-            delete beverage;
-        }
-
-        Mocha(Beverage * beverage)
-        {
-            this->beverage = beverage;
-        }
-
-        string getDescription()
-        {
-            return beverage->getDescription().append(", Mocha");
-        }
-
-        double cost()
-        {
-            return beverage->cost() + .20;
-        }
-};
 
 int main()
 {
