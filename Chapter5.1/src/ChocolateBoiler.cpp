@@ -56,7 +56,7 @@ void ChocolateBoiler::fill()
         boiled = false;
         cout << "Boiler filled." << endl;
     }
-    else cout << "Boiler alreaddy filled!" << endl;
+    else cout << "Boiler already filled!" << endl;
 }
 
 void ChocolateBoiler::drain()
@@ -76,5 +76,5 @@ void ChocolateBoiler::boil()
         boiled = true;
         cout << "Boiler boiled." << endl;
     }
-    else cout << "Boiler is empty or alreaddy boiled!" << endl;
+    else cout << "Boiler is empty or already boiled!" << endl;
 }

@@ -22,8 +22,8 @@ int main()
     chocolateBoiler2->boil();
     chocolateBoiler2->drain();
 
-    delete chocolateBoiler;
-    delete chocolateBoiler2;
+    //delete chocolateBoiler;
+    //delete chocolateBoiler2;
     ChocolateBoiler * chocolateBoiler3 = ChocolateBoiler::getInstance();
     ChocolateBoiler * chocolateBoiler4 = ChocolateBoiler::getInstance();
     chocolateBoiler3->fill();
@@ -33,8 +33,8 @@ int main()
     chocolateBoiler4->boil();
     chocolateBoiler4->drain();
 
-    delete chocolateBoiler3;
-    delete chocolateBoiler4;
+    //delete chocolateBoiler3;
+    //delete chocolateBoiler4;
 
     ChocolateBoiler::dispose();
     return 0;
