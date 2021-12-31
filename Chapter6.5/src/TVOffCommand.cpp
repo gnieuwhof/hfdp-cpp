@@ -21,7 +21,7 @@ void TVOffCommand::undo()
     tv->off();
 }
 
-string TVOffCommand::toString()
+std::string TVOffCommand::toString()
 {
     return "TVOffCommand";
 }

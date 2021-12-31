@@ -13,7 +13,7 @@ class GarageDoorDownCommand: public Command
         virtual ~GarageDoorDownCommand();
 
         void execute();
-        string toString();
+        std::string toString();
 
     protected:
 

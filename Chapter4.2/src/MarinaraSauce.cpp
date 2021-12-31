@@ -11,7 +11,7 @@ MarinaraSauce::~MarinaraSauce()
 }
 
 
-string MarinaraSauce::toString()
+std::string MarinaraSauce::toString()
 {
     return "Marinara Sauce";
 }

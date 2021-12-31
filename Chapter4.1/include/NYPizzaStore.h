@@ -6,15 +6,13 @@
 
 #include <string>
 
-using namespace std;
-
 class NYPizzaStore: public SimplePizzaFactory
 {
     public:
         NYPizzaStore();
         virtual ~NYPizzaStore();
 
-        Pizza * createPizza(string item);
+        Pizza * createPizza(std::string item);
 
     protected:
 

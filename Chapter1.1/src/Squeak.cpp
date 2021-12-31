@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 Squeak::Squeak()
 {
     //ctor
@@ -17,5 +15,5 @@ Squeak::~Squeak()
 
 void Squeak::quack()
 {
-    cout << "Squeak" << endl;
+    std::cout << "Squeak" << std::endl;
 }

@@ -2,9 +2,7 @@
 
 #include <iostream>
 
-using namespace std;
-
-Stereo::Stereo(string location)
+Stereo::Stereo(std::string location)
 {
     this->location = location;
 }
@@ -17,30 +15,30 @@ Stereo::~Stereo()
 
 void Stereo::on()
 {
-    cout << location << " Stereo is On" << endl;
+    std::cout << location << " Stereo is On" << std::endl;
 }
 
 void Stereo::off()
 {
-    cout << location << " Stereo is Off" << endl;
+    std::cout << location << " Stereo is Off" << std::endl;
 }
 
 void Stereo::setCD()
 {
-    cout << location << " Stereo is set to CD" << endl;
+    std::cout << location << " Stereo is set to CD" << std::endl;
 }
 
 void Stereo::setDvd()
 {
-    cout << location << " Stereo is set to DVD" << endl;
+    std::cout << location << " Stereo is set to DVD" << std::endl;
 }
 
 void Stereo::setRadio()
 {
-    cout << location << " Stereo is set to Radio" << endl;
+    std::cout << location << " Stereo is set to Radio" << std::endl;
 }
 
 void Stereo::setVolume(int level)
 {
-    cout << location << " Stereo volume is set to " << level << endl;
+    std::cout << location << " Stereo volume is set to " << level << std::endl;
 }

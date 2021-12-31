@@ -11,7 +11,7 @@ Beverage::~Beverage()
 }
 
 
-string Beverage::getDescription()
+std::string Beverage::getDescription()
 {
     return description;
 }

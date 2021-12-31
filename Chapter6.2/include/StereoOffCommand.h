@@ -13,7 +13,7 @@ class StereoOffCommand: public Command
         virtual ~StereoOffCommand();
 
         void execute();
-        string toString();
+        std::string toString();
 
     protected:
 

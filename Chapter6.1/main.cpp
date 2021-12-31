@@ -7,8 +7,6 @@
 #include <iostream>
 #include <limits>
 
-using namespace std;
-
 int main()
 {
     SimpleRemoteControl * remote = new SimpleRemoteControl;

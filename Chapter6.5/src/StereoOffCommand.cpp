@@ -23,7 +23,7 @@ void StereoOffCommand::undo()
     stereo->setVolume(11);
 }
 
-string StereoOffCommand::toString()
+std::string StereoOffCommand::toString()
 {
     return "StereoOffCommand";
 }

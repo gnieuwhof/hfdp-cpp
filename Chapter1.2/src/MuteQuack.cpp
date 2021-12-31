@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 MuteQuack::MuteQuack()
 {
     //ctor
@@ -17,5 +15,5 @@ MuteQuack::~MuteQuack()
 
 void MuteQuack::quack()
 {
-    cout << "Silence" << endl;
+    std::cout << "Silence" << std::endl;
 }

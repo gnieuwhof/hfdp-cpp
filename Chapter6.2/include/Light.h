@@ -4,19 +4,17 @@
 #include <string>
 #include <iostream>
 
-using namespace std;
-
 class Light
 {
     public:
-        Light(string location);
+        Light(std::string location);
         virtual ~Light();
 
         void on();
         void off();
 
     protected:
-        string location;
+        std::string location;
 
     private:
 };

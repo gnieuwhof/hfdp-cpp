@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 CheesePizza::CheesePizza(PizzaIngredientFactory * ingredientFactory)
 {
     this->ingredientFactory = ingredientFactory;
@@ -17,7 +15,7 @@ CheesePizza::~CheesePizza()
 
 void CheesePizza::prepare()
 {
-    cout << "Preparing " << name << endl;
+    std::cout << "Preparing " << name << std::endl;
     dough = ingredientFactory->createDough();
     sauce = ingredientFactory->createSauce();
     cheese = ingredientFactory->createCheese();

@@ -18,7 +18,7 @@ void StereoOnWithCDCommand::execute()
     stereo->setVolume(11);
 }
 
-string StereoOnWithCDCommand::toString()
+std::string StereoOnWithCDCommand::toString()
 {
     return "StereoOnWithCDCommand";
 }

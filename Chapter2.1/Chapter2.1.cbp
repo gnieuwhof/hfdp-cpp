@@ -7,21 +7,23 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin\Debug\Chapter2.1" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Debug\" />
+				<Option output="bin/Debug/Chapter2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin\Release\Chapter2.1" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Release\" />
+				<Option output="bin/Release/Chapter2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,11 +34,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/CurrentConditionsDisplay.h" />
+		<Unit filename="include/DisplayElement.h" />
+		<Unit filename="include/Observer.h" />
+		<Unit filename="include/Subject.h" />
+		<Unit filename="include/WeatherData.h" />
 		<Unit filename="main.cpp" />
-		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
-		</Extensions>
+		<Unit filename="src/CurrentConditionsDisplay.cpp" />
+		<Unit filename="src/DisplayElement.cpp" />
+		<Unit filename="src/Observer.cpp" />
+		<Unit filename="src/Subject.cpp" />
+		<Unit filename="src/WeatherData.cpp" />
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

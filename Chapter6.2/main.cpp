@@ -11,8 +11,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
     RemoteControl * remoteControl = new RemoteControl;
@@ -41,7 +39,7 @@ int main()
     remoteControl->setCommand(2, garageDoorUp, garageDoorDown);
     remoteControl->setCommand(3, stereoOnWithCD, stereoOff);
 
-    cout << remoteControl->toString() << endl;
+    std::cout << remoteControl->toString() << std::endl;
 
     remoteControl->onButtonWasPushed(0);
     remoteControl->offButtonWasPushed(0);

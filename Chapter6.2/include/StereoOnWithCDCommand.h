@@ -13,7 +13,7 @@ class StereoOnWithCDCommand: public Command
         virtual ~StereoOnWithCDCommand();
 
         void execute();
-        string toString();
+        std::string toString();
 
     protected:
 

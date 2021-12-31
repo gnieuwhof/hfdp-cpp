@@ -6,18 +6,15 @@
 
 #include <string>
 
-using namespace std;
-
 class StereoOffCommand: public Command
 {
     public:
-        StereoOffCommand();
+        StereoOffCommand(Stereo * stereo);
         virtual ~StereoOffCommand();
 
-                StereoOffCommand(Stereo * stereo);
         void execute();
         void undo();
-        string toString();
+        std::string toString();
 
     protected:
 

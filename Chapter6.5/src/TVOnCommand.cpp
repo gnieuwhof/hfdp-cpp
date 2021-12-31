@@ -22,7 +22,7 @@ void TVOnCommand::undo()
     tv->off();
 }
 
-string TVOnCommand::toString()
+std::string TVOnCommand::toString()
 {
     return "TVOnCommand";
 }

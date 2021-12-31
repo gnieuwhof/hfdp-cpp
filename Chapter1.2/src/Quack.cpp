@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 Quack::Quack()
 {
     //ctor
@@ -17,5 +15,5 @@ Quack::~Quack()
 
 void Quack::quack()
 {
-    cout << "Quack" << endl;
+    std::cout << "Quack" << std::endl;
 }

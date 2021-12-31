@@ -1,10 +1,7 @@
 #ifndef VEGGIES_H
 #define VEGGIES_H
 
-
 #include <string>
-
-using namespace std;
 
 class Veggies
 {
@@ -12,7 +9,7 @@ class Veggies
         Veggies();
         virtual ~Veggies();
 
-        virtual string toString() = 0;;
+        virtual std::string toString() = 0;;
 
     protected:
 

@@ -12,7 +12,7 @@ class CeilingFanHighCommand: public Command
 
         void execute();
         void undo();
-        string toString();
+        std::string toString();
 
     protected:
         CeilingFan * ceilingFan;

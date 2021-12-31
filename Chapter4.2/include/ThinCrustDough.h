@@ -5,15 +5,13 @@
 
 #include <string>
 
-using namespace std;
-
 class ThinCrustDough: public Dough
 {
     public:
         ThinCrustDough();
         virtual ~ThinCrustDough();
 
-        string toString();
+        std::string toString();
 
     protected:
 

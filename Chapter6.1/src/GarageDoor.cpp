@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 GarageDoor::GarageDoor()
 {
     //ctor
@@ -17,25 +15,25 @@ GarageDoor::~GarageDoor()
 
 void GarageDoor::up()
 {
-    cout << "Garage Door is Open" << endl;
+    std::cout << "Garage Door is Open" << std::endl;
 }
 
 void GarageDoor::down()
 {
-    cout << "Garage Door is Closed" << endl;
+    std::cout << "Garage Door is Closed" << std::endl;
 }
 
 void GarageDoor::stop()
 {
-    cout << "Garage Door is Stopped" << endl;
+    std::cout << "Garage Door is Stopped" << std::endl;
 }
 
 void GarageDoor::lightOn()
 {
-    cout << "Garage light is On" << endl;
+    std::cout << "Garage light is On" << std::endl;
 }
 
 void GarageDoor::lightOff()
 {
-    cout << "Garage light is Off" << endl;
+    std::cout << "Garage light is Off" << std::endl;
 }

@@ -11,7 +11,7 @@ RedPepper::~RedPepper()
 }
 
 
-string RedPepper::toString()
+std::string RedPepper::toString()
 {
     return "Red Pepper";
 }

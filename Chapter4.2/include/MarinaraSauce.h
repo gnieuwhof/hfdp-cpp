@@ -5,15 +5,13 @@
 
 #include <string>
 
-using namespace std;
-
 class MarinaraSauce: public Sauce
 {
     public:
         MarinaraSauce();
         virtual ~MarinaraSauce();
 
-        string toString();
+        std::string toString();
 
     protected:
 

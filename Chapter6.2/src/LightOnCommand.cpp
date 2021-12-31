@@ -16,7 +16,7 @@ void LightOnCommand::execute()
     light->on();
 }
 
-string LightOnCommand::toString()
+std::string LightOnCommand::toString()
 {
     return "LightOnCommand";
 }

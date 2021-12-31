@@ -13,7 +13,7 @@ class LightOnCommand: public Command
         virtual ~LightOnCommand();
 
         void execute();
-        string toString();
+        std::string toString();
 
     protected:
 

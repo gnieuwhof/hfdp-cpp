@@ -4,8 +4,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 ModelDuck::ModelDuck()
 {
     flyBehavior = new FlyNoWay;
@@ -21,5 +19,5 @@ ModelDuck::~ModelDuck()
 
 void ModelDuck::display()
 {
-    cout << "I'm a model duck" << endl;
+    std::cout << "I'm a model duck" << std::endl;
 }

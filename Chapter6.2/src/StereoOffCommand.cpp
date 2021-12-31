@@ -16,7 +16,7 @@ void StereoOffCommand::execute()
     stereo->off();
 }
 
-string StereoOffCommand::toString()
+std::string StereoOffCommand::toString()
 {
     return "StereoOffCommand";
 }

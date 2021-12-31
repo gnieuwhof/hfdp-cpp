@@ -5,18 +5,16 @@
 
 #include <string>
 
-using namespace std;
-
 class PizzaStore
 {
     public:
         PizzaStore();
         virtual ~PizzaStore();
 
-        Pizza * orderPizza(string type);
+        Pizza * orderPizza(std::string type);
 
     protected:
-        virtual Pizza * createPizza(string item) = 0;
+        virtual Pizza * createPizza(std::string item) = 0;
 
     private:
 };

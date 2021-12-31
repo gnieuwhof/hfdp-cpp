@@ -12,7 +12,7 @@ class RemoteControl
         void setCommand(int slot, Command * onCommand, Command * offCommand);
         void onButtonWasPushed(int slot);
         void offButtonWasPushed(int slot);
-        string toString();
+        std::string toString();
 
     protected:
         Command * onCommands[7];

@@ -6,18 +6,15 @@
 
 #include <string>
 
-using namespace std;
-
 class GarageDoorUpCommand: public Command
 {
     public:
-        GarageDoorUpCommand();
+        GarageDoorUpCommand(GarageDoor * garageDoor);
         virtual ~GarageDoorUpCommand();
 
-                GarageDoorUpCommand(GarageDoor * garageDoor);
         void execute();
         void undo();
-        string toString();
+        std::string toString();
 
     protected:
 

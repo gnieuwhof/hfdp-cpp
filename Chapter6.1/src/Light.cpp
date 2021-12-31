@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 Light::Light()
 {
     //ctor
@@ -17,10 +15,10 @@ Light::~Light()
 
 void Light::on()
 {
-    cout << "Light is on" << endl;
+    std::cout << "Light is on" << std::endl;
 }
 
 void Light::off()
 {
-    cout << "Light is off" << endl;
+    std::cout << "Light is off" << std::endl;
 }

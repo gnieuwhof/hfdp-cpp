@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 Pizza::Pizza()
 {
     //ctor
@@ -17,34 +15,34 @@ Pizza::~Pizza()
 
 void Pizza::prepare()
 {
-    cout << "Preparing " << name << endl;
-    cout << "Tossing dough..." << endl;
-    cout << "Adding suace..." << endl;
-    cout << "Adding toppings: " << endl;
-    for(list<string>::iterator i = toppings.begin();
+    std::cout << "Preparing " << name << std::endl;
+    std::cout << "Tossing dough..." << std::endl;
+    std::cout << "Adding sauce..." << std::endl;
+    std::cout << "Adding toppings: " << std::endl;
+    for(std::list<std::string>::iterator i = toppings.begin();
         i != toppings.end(); i++)
     {
-        cout << "    " << *i << endl;
+        std::cout << "    " << *i << std::endl;
     }
 
 }
 
 void Pizza::bake()
 {
-    cout << "Bake for 25 minutes at 350" << endl;
+    std::cout << "Bake for 25 minutes at 350" << std::endl;
 }
 
 void Pizza::cut()
 {
-    cout << "Cutting the pizza into diagonal slices" << endl;
+    std::cout << "Cutting the pizza into diagonal slices" << std::endl;
 }
 
 void Pizza::box()
 {
-    cout << "Place pizza into official PizzaStore box" << endl;
+    std::cout << "Place pizza into official PizzaStore box" << std::endl;
 }
 
-string Pizza::getName()
+std::string Pizza::getName()
 {
     return name;
 }

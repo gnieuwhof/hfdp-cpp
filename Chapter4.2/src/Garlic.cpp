@@ -11,7 +11,7 @@ Garlic::~Garlic()
 }
 
 
-string Garlic::toString()
+std::string Garlic::toString()
 {
     return "Garlic";
 }

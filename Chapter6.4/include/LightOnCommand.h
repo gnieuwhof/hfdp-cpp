@@ -7,8 +7,6 @@
 
 #include <string>
 
-using namespace std;
-
 class LightOnCommand: public Command
 {
     public:
@@ -17,7 +15,7 @@ class LightOnCommand: public Command
 
         void execute();
         void undo();
-        string toString();
+        std::string toString();
 
     protected:
 

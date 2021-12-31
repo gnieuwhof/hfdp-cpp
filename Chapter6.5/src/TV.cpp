@@ -2,9 +2,7 @@
 
 #include <iostream>
 
-using namespace std;
-
-TV::TV(string location)
+TV::TV(std::string location)
 {
     this->location = location;
 }
@@ -17,16 +15,16 @@ TV::~TV()
 
 void TV::on()
 {
-    cout << location << " TV is on" << endl;
+    std::cout << location << " TV is on" << std::endl;
 }
 
 void TV::off()
 {
-    cout << location << "TV is off" << endl;
+    std::cout << location << "TV is off" << std::endl;
 }
 
 void TV::setChannel(int channel)
 {
     this->channel = channel;
-    cout << location << " TV is set to channel " << channel << endl;
+    std::cout << location << " TV is set to channel " << channel << std::endl;
 }

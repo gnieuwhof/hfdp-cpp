@@ -5,15 +5,13 @@
 
 #include <string>
 
-using namespace std;
-
 class FreshClams: public Clams
 {
     public:
         FreshClams();
         virtual ~FreshClams();
 
-        string toString();
+        std::string toString();
 
     protected:
 

@@ -34,7 +34,7 @@ void CeilingFanOffCommand::undo()
     }
 }
 
-string CeilingFanOffCommand::toString()
+std::string CeilingFanOffCommand::toString()
 {
     return "CeilingFanOffCommand";
 }

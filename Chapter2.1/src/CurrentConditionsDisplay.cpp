@@ -3,8 +3,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 CurrentConditionsDisplay::CurrentConditionsDisplay(Subject * weatherData)
 {
     this->weatherData = weatherData;
@@ -18,8 +16,8 @@ CurrentConditionsDisplay::~CurrentConditionsDisplay()
 
 void CurrentConditionsDisplay::display()
 {
-    cout << "Current conditions: " << temperature;
-    cout << "C degrees and " << humidity << "% humidity" << endl;
+    std::cout << "Current conditions: " << temperature;
+    std::cout << "C degrees and " << humidity << "% humidity" << std::endl;
 }
 
 void CurrentConditionsDisplay::update(float temperature, float humidity, float pressure)

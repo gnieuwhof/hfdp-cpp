@@ -6,8 +6,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
     RemoteControlWithUndo * remoteControl = new RemoteControlWithUndo;
@@ -28,11 +26,11 @@ int main()
 
     remoteControl->onButtonWasPushed(0);
     remoteControl->offButtonWasPushed(0);
-    cout << remoteControl->toString() << endl;
+    std::cout << remoteControl->toString() << std::endl;
     remoteControl->undoButtonWasPushed();
 
     remoteControl->onButtonWasPushed(1);
-    cout << remoteControl->toString() << endl;
+    std::cout << remoteControl->toString() << std::endl;
     remoteControl->undoButtonWasPushed();
 
     return 0;

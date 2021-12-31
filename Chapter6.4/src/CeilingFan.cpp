@@ -2,9 +2,7 @@
 
 #include <iostream>
 
-using namespace std;
-
-CeilingFan::CeilingFan(string location)
+CeilingFan::CeilingFan(std::string location)
 {
     this->location = location;
     speed = OFF;
@@ -19,25 +17,25 @@ CeilingFan::~CeilingFan()
 void CeilingFan::high()
 {
     speed = HIGH;
-    cout << location << " ceiling fan is on high" << endl;
+    std::cout << location << " ceiling fan is on high" << std::endl;
 }
 
 void CeilingFan::medium()
 {
     speed = MEDIUM;
-    cout << location << " ceiling fan is on medium" << endl;
+    std::cout << location << " ceiling fan is on medium" << std::endl;
 }
 
 void CeilingFan::low()
 {
     speed = LOW;
-    cout << location << " ceiling fan is on low" << endl;
+    std::cout << location << " ceiling fan is on low" << std::endl;
 }
 
 void CeilingFan::off()
 {
     speed = OFF;
-    cout << location << " ceiling fan is off" << endl;
+    std::cout << location << " ceiling fan is off" << std::endl;
 }
 
 int CeilingFan::getSpeed()

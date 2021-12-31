@@ -4,8 +4,6 @@
 
 #include <sstream>
 
-using namespace std;
-
 RemoteControl::RemoteControl()
 {
     Command * noCommand = new NoCommand;
@@ -38,16 +36,16 @@ void RemoteControl::offButtonWasPushed(int slot)
     offCommands[slot]->execute();
 }
 
-string RemoteControl::toString()
+std::string RemoteControl::toString()
 {
-    stringstream result;
-    result << "--- Remote Control ---" << endl;
+    std::stringstream result;
+    result << "--- Remote Control ---" << std::endl;
     //string result = "\n--- Remote Control ---\n";
     for (int i = 0; i < 7; i++)
     {
         result << "[slot " << i << "] ";
         result << onCommands[i]->toString() << "    ";
-        result << offCommands[i]->toString() << endl;
+        result << offCommands[i]->toString() << std::endl;
         /*
         result.append("[slot ");
         stringstream sstream;

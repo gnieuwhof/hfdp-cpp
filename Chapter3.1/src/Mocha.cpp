@@ -11,7 +11,7 @@ Mocha::~Mocha()
 }
 
 
-string Mocha::getDescription()
+std::string Mocha::getDescription()
 {
     return beverage->getDescription().append(", Mocha");
 }

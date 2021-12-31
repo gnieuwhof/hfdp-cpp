@@ -11,7 +11,7 @@ FreshClams::~FreshClams()
 }
 
 
-string FreshClams::toString()
+std::string FreshClams::toString()
 {
     return "Fresh Clams";
 }

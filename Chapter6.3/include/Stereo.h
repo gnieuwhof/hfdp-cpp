@@ -3,12 +3,10 @@
 
 #include <string>
 
-using namespace std;
-
 class Stereo
 {
     public:
-        Stereo(string location);
+        Stereo(std::string location);
         virtual ~Stereo();
 
         void on();
@@ -19,7 +17,7 @@ class Stereo
         void setVolume(int level);
 
     protected:
-        string location;
+        std::string location;
 
     private:
 };

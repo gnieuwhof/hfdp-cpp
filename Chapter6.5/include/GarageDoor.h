@@ -3,12 +3,10 @@
 
 #include <string>
 
-using namespace std;
-
 class GarageDoor
 {
     public:
-        GarageDoor(string location);
+        GarageDoor(std::string location);
         virtual ~GarageDoor();
 
         void up();
@@ -18,7 +16,7 @@ class GarageDoor
         void lightOff();
 
     protected:
-        string location;
+        std::string location;
 
     private:
 };

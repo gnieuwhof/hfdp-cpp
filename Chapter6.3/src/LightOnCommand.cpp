@@ -21,7 +21,7 @@ void LightOnCommand::undo()
     light->off();
 }
 
-string LightOnCommand::toString()
+std::string LightOnCommand::toString()
 {
     return "LightOnCommand";
 }

@@ -11,7 +11,7 @@ ThinCrustDough::~ThinCrustDough()
 }
 
 
-string ThinCrustDough::toString()
+std::string ThinCrustDough::toString()
 {
     return "Thin Crust Dough";
 }

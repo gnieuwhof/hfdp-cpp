@@ -20,7 +20,7 @@ class NYPizzaIngredientFactory: public PizzaIngredientFactory
         Dough * createDough();
         Sauce * createSauce();
         Cheese * createCheese();
-        list<Veggies *> createVeggies();
+        std::list<Veggies *> createVeggies();
         Pepperoni * createPepperoni();
         Clams * createClam();
 

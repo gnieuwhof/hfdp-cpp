@@ -20,7 +20,7 @@ void MacroCommand::execute()
     }
 }
 
-string MacroCommand::toString()
+std::string MacroCommand::toString()
 {
     return "MacroCommand";
 }

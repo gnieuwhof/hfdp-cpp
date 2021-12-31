@@ -5,15 +5,13 @@
 
 #include <string>
 
-using namespace std;
-
 class Garlic: public Veggies
 {
     public:
         Garlic();
         virtual ~Garlic();
 
-        string toString();
+        std::string toString();
 
     protected:
 

@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 Duck::Duck()
 {
     //ctor
@@ -27,7 +25,7 @@ void Duck::performQuack()
 
 void Duck::swim()
 {
-    cout << "All ducks float, even decoys!" << endl;
+    std::cout << "All ducks float, even decoys!" << std::endl;
 }
 
 void Duck::setFlyBehavior(FlyBehavior * fb)

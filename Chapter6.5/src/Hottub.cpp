@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 Hottub::Hottub()
 {
     //ctor
@@ -29,7 +27,7 @@ void Hottub::circulate()
 {
     if (isOn)
     {
-        cout << "Hottub is bubling!" << endl;
+        std::cout << "Hottub is bubling!" << std::endl;
     }
 }
 
@@ -37,7 +35,7 @@ void Hottub::jetsOn()
 {
     if (isOn)
     {
-        cout << "Hottub jets are on" << endl;
+        std::cout << "Hottub jets are on" << std::endl;
     }
 }
 
@@ -45,7 +43,7 @@ void Hottub::jetsOff()
 {
     if (isOn)
     {
-        cout << "Hottub jets are off" << endl;
+        std::cout << "Hottub jets are off" << std::endl;
     }
 }
 
@@ -53,12 +51,12 @@ void Hottub::setTemperature(int temperature)
 {
     if (temperature > this->temperature)
     {
-        cout << "Hottub is heating to a steaming " << temperature;
-        cout << " degrees" << endl;
+        std::cout << "Hottub is heating to a steaming " << temperature;
+        std::cout << " degrees" << std::endl;
     }else
     {
-        cout << "Hottub is cooling to " << temperature;
-        cout << " degrees" << endl;
+        std::cout << "Hottub is cooling to " << temperature;
+        std::cout << " degrees" << std::endl;
     }
     this->temperature = temperature;
 }

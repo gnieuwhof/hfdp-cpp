@@ -11,7 +11,7 @@ NoCommand::~NoCommand()
 }
 
 
-string NoCommand::toString()
+std::string NoCommand::toString()
 {
     return "NoCommand";
 }

@@ -2,9 +2,7 @@
 
 #include <iostream>
 
-using namespace std;
-
-Light::Light(string location)
+Light::Light(std::string location)
 {
     this->location = location;
 }
@@ -17,10 +15,10 @@ Light::~Light()
 
 void Light::on()
 {
-    cout << location << " Light is on" << endl;
+    std::cout << location << " Light is on" << std::endl;
 }
 
 void Light::off()
 {
-    cout << location << " Light is off" << endl;
+    std::cout << location << " Light is off" << std::endl;
 }

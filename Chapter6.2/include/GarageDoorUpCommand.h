@@ -14,7 +14,7 @@ class GarageDoorUpCommand: public Command
         virtual ~GarageDoorUpCommand();
 
         void execute();
-        string toString();
+        std::string toString();
 
     protected:
 

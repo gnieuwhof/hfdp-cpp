@@ -23,7 +23,7 @@ void StereoOnWithCDCommand::undo()
     stereo->off();
 }
 
-string StereoOnWithCDCommand::toString()
+std::string StereoOnWithCDCommand::toString()
 {
     return "StereoOnWithCDCommand";
 }

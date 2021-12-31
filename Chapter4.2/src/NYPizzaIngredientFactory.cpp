@@ -36,9 +36,9 @@ Cheese * NYPizzaIngredientFactory::createCheese()
     return new ReggianoCheese;
 }
 
-list<Veggies *> NYPizzaIngredientFactory::createVeggies()
+std::list<Veggies *> NYPizzaIngredientFactory::createVeggies()
 {
-    list<Veggies *> veggies;
+    std::list<Veggies *> veggies;
     veggies.push_back(new Garlic);
     veggies.push_back(new Onion);
     veggies.push_back(new Mushroom);

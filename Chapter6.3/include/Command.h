@@ -3,8 +3,6 @@
 
 #include <string>
 
-using namespace std;
-
 class Command
 {
     public:
@@ -13,7 +11,7 @@ class Command
 
         virtual void execute(){};
         virtual void undo(){};
-        virtual string toString() = 0;
+        virtual std::string toString() = 0;
 
     protected:
 

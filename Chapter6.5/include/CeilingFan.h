@@ -3,12 +3,10 @@
 
 #include <string>
 
-using namespace std;
-
 class CeilingFan
 {
     public:
-        CeilingFan(string location);
+        CeilingFan(std::string location);
         virtual ~CeilingFan();
 
         static const int HIGH = 3;
@@ -23,7 +21,7 @@ class CeilingFan
         int getSpeed();
 
     protected:
-        string location;
+        std::string location;
         int speed;
 
     private:

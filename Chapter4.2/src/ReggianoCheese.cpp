@@ -11,7 +11,7 @@ ReggianoCheese::~ReggianoCheese()
 }
 
 
-string ReggianoCheese::toString()
+std::string ReggianoCheese::toString()
 {
     return "ReggianoCheese";
 }

@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 FlyRocketPowered::FlyRocketPowered()
 {
     //ctor
@@ -17,5 +15,5 @@ FlyRocketPowered::~FlyRocketPowered()
 
 void FlyRocketPowered::fly()
 {
-    cout << "I'm flying with a rocket!" << endl;
+    std::cout << "I'm flying with a rocket!" << std::endl;
 }

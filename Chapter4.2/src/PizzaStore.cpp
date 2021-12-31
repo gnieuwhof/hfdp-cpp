@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 PizzaStore::PizzaStore()
 {
     //ctor
@@ -15,11 +13,11 @@ PizzaStore::~PizzaStore()
 }
 
 
-Pizza * PizzaStore::orderPizza(string type)
+Pizza * PizzaStore::orderPizza(std::string type)
 {
     Pizza * pizza = createPizza(type);
 
-    cout << "--- Making a " << pizza->getName() << " ---" << endl;
+    std::cout << "--- Making a " << pizza->getName() << " ---" << std::endl;
 
     pizza->prepare();
     pizza->bake();

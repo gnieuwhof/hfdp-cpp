@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 ChocolateBoiler::ChocolateBoiler()
 {
     empty = true;
@@ -54,9 +52,12 @@ void ChocolateBoiler::fill()
     {
         empty = false;
         boiled = false;
-        cout << "Boiler filled." << endl;
+        std::cout << "Boiler filled." << std::endl;
     }
-    else cout << "Boiler already filled!" << endl;
+    else
+    {
+        std::cout << "Boiler already filled!" << std::endl;
+    }
 }
 
 void ChocolateBoiler::drain()
@@ -64,9 +65,12 @@ void ChocolateBoiler::drain()
     if (!isEmpty() && isBoiled())
     {
         empty = true;
-        cout << "Boiler drained." << endl;
+        std::cout << "Boiler drained." << std::endl;
     }
-    else cout << "Boiler is empty!" << endl;
+    else
+    {
+        std::cout << "Boiler is empty!" << std::endl;
+    }
 }
 
 void ChocolateBoiler::boil()
@@ -74,7 +78,10 @@ void ChocolateBoiler::boil()
     if (!isEmpty() && !isBoiled())
     {
         boiled = true;
-        cout << "Boiler boiled." << endl;
+        std::cout << "Boiler boiled." << std::endl;
     }
-    else cout << "Boiler is empty or already boiled!" << endl;
+    else
+    {
+        std::cout << "Boiler is empty or already boiled!" << std::endl;
+    }
 }

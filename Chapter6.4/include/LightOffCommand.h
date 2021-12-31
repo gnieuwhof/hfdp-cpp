@@ -6,18 +6,15 @@
 
 #include <string>
 
-using namespace std;
-
 class LightOffCommand: public Command
 {
     public:
-        LightOffCommand();
+        LightOffCommand(Light * light);
         virtual ~LightOffCommand();
 
-                LightOffCommand(Light * light);
         void execute();
         void undo();
-        string toString();
+        std::string toString();
 
     protected:
 

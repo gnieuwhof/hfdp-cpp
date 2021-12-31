@@ -43,15 +43,15 @@ void RemoteControlWithUndo::undoButtonWasPushed()
     undoCommand->undo();
 }
 
-string RemoteControlWithUndo::toString()
+std::string RemoteControlWithUndo::toString()
 {
-    stringstream result;
-    result << "--- Remote Control ---" << endl;
+    std::stringstream result;
+    result << "--- Remote Control ---" << std::endl;
     for (int i = 0; i < 7; i++)
     {
         result << "[slot " << i << "] ";
         result << onCommands[i]->toString() << "    ";
-        result << offCommands[i]->toString() << endl;
+        result << offCommands[i]->toString() << std::endl;
     }
     return result.str();
 }

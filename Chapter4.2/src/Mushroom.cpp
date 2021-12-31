@@ -11,7 +11,7 @@ Mushroom::~Mushroom()
 }
 
 
-string Mushroom::toString()
+std::string Mushroom::toString()
 {
     return "Mushroom";
 }

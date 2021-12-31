@@ -6,18 +6,15 @@
 
 #include <string>
 
-using namespace std;
-
 class TVOnCommand: public Command
 {
     public:
-        TVOnCommand();
+        TVOnCommand(TV * tv);
         virtual ~TVOnCommand();
 
-                TVOnCommand(TV * tv);
         void execute();
         void undo();
-        string toString();
+        std::string toString();
 
     protected:
 

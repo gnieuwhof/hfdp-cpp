@@ -24,7 +24,7 @@ void HottubOnCommand::undo()
     hottub->setTemperature(89);
 }
 
-string HottubOnCommand::toString()
+std::string HottubOnCommand::toString()
 {
     return "HottubOnCommand";
 }

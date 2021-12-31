@@ -7,21 +7,23 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin\Debug\Chapter4.1" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Debug\" />
+				<Option output="bin/Debug/Chapter4" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin\Release\Chapter4.1" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Release\" />
+				<Option output="bin/Release/Chapter4" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,11 +34,24 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/CheesePizza.h" />
+		<Unit filename="include/ChicagoPizzaStore.h" />
+		<Unit filename="include/ChicagoStyleCheesePizza.h" />
+		<Unit filename="include/NYPizzaStore.h" />
+		<Unit filename="include/NYStyleCheesePizza.h" />
+		<Unit filename="include/Pizza.h" />
+		<Unit filename="include/PizzaStore.h" />
+		<Unit filename="include/SimplePizzaFactory.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/CheesePizza.cpp" />
+		<Unit filename="src/ChicagoPizzaStore.cpp" />
+		<Unit filename="src/ChicagoStyleCheesePizza.cpp" />
+		<Unit filename="src/NYPizzaStore.cpp" />
+		<Unit filename="src/NYStyleCheesePizza.cpp" />
+		<Unit filename="src/Pizza.cpp" />
+		<Unit filename="src/PizzaStore.cpp" />
+		<Unit filename="src/SimplePizzaFactory.cpp" />
 		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>

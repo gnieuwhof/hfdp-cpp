@@ -11,8 +11,6 @@
 #include <string>
 #include <list>
 
-using namespace std;
-
 class Pizza
 {
     public:
@@ -23,15 +21,15 @@ class Pizza
         void bake();
         virtual void cut();
         void box();
-        void setName(string name);
-        string getName();
-        string toString();
+        void setName(std::string name);
+        std::string getName();
+        std::string toString();
 
     protected:
-        string name;
+        std::string name;
         Dough * dough;
         Sauce * sauce;
-        list<Veggies *> veggies;
+        std::list<Veggies *> veggies;
         Cheese * cheese;
         Pepperoni * pepperoni;
         Clams * clam;

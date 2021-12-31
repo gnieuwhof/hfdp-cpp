@@ -5,8 +5,6 @@
 
 #include <string>
 
-using namespace std;
-
 class RemoteControlWithUndo
 {
     public:
@@ -17,7 +15,7 @@ class RemoteControlWithUndo
         void onButtonWasPushed(int slot);
         void offButtonWasPushed(int slot);
         void undoButtonWasPushed();
-        string toString();
+        std::string toString();
 
     protected:
         Command * onCommands[7];

@@ -4,8 +4,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 MallardDuck::MallardDuck()
 {
     quackBehavior = new Quack;
@@ -21,5 +19,5 @@ MallardDuck::~MallardDuck()
 
 void MallardDuck::display()
 {
-    cout << "I'm a real Mallard duck" << endl;
+    std::cout << "I'm a real Mallard duck" << std::endl;
 }

@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 FlyNoWay::FlyNoWay()
 {
     //ctor
@@ -17,5 +15,5 @@ FlyNoWay::~FlyNoWay()
 
 void FlyNoWay::fly()
 {
-    cout << "I can't fly" << endl;
+    std::cout << "I can't fly" << std::endl;
 }

@@ -5,8 +5,6 @@
 
 #include <string>
 
-using namespace std;
-
 class NoCommand: public Command
 {
     public:
@@ -14,7 +12,7 @@ class NoCommand: public Command
         virtual ~NoCommand();
 
         void execute(){}
-        string toString();
+        std::string toString();
 
     protected:
 

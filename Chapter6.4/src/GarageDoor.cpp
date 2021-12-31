@@ -2,9 +2,7 @@
 
 #include <iostream>
 
-using namespace std;
-
-GarageDoor::GarageDoor(string location)
+GarageDoor::GarageDoor(std::string location)
 {
     this->location = location;
 }
@@ -17,25 +15,25 @@ GarageDoor::~GarageDoor()
 
 void GarageDoor::up()
 {
-    cout << location << " Garage Door is Open" << endl;
+    std::cout << location << " Garage Door is Open" << std::endl;
 }
 
 void GarageDoor::down()
 {
-    cout << location << " Garage Door is Closed" << endl;
+    std::cout << location << " Garage Door is Closed" << std::endl;
 }
 
 void GarageDoor::stop()
 {
-    cout << location << " Garage Door is Stopped" << endl;
+    std::cout << location << " Garage Door is Stopped" << std::endl;
 }
 
 void GarageDoor::lightOn()
 {
-    cout << location << " Garage light is On" << endl;
+    std::cout << location << " Garage light is On" << std::endl;
 }
 
 void GarageDoor::lightOff()
 {
-    cout << location << " Garage light is Off" << endl;
+    std::cout << location << " Garage light is Off" << std::endl;
 }

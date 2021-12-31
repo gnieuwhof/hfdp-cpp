@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 FlyWithWings::FlyWithWings()
 {
     //ctor
@@ -17,5 +15,5 @@ FlyWithWings::~FlyWithWings()
 
 void FlyWithWings::fly()
 {
-    cout << "I'm flying!" << endl;
+    std::cout << "I'm flying!" << std::endl;
 }

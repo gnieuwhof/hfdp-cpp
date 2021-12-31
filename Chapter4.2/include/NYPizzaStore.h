@@ -6,8 +6,6 @@
 
 #include <string>
 
-using namespace std;
-
 class NYPizzaStore: public PizzaStore
 {
     public:
@@ -15,7 +13,7 @@ class NYPizzaStore: public PizzaStore
         virtual ~NYPizzaStore();
 
     protected:
-        Pizza * createPizza(string item);
+        Pizza * createPizza(std::string item);
 
     private:
 };

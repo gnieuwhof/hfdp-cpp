@@ -37,7 +37,7 @@ void CeilingFanMediumCommand::undo()
     }
 }
 
-string CeilingFanMediumCommand::toString()
+std::string CeilingFanMediumCommand::toString()
 {
     return "CeilingFanMediumCommand";
 }

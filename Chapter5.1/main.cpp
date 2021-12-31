@@ -3,8 +3,6 @@
 #include <iostream>
 #include <limits>
 
-using namespace std;
-
 // Lazy
 //ChocolateBoiler * ChocolateBoiler::uniqueInstance = 0;
 //int ChocolateBoiler::instances = 0;

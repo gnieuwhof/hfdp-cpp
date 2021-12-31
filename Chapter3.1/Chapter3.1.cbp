@@ -7,21 +7,23 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin\Debug\Chapter3.1" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Debug\" />
+				<Option output="bin/Debug/Chapter3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin\Release\Chapter3.1" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Release\" />
+				<Option output="bin/Release/Chapter3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,11 +34,18 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Beverage.h" />
+		<Unit filename="include/CondimentBeverage.h" />
+		<Unit filename="include/Espresso.h" />
+		<Unit filename="include/HouseBlend.h" />
+		<Unit filename="include/Mocha.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Beverage.cpp" />
+		<Unit filename="src/CondimentBeverage.cpp" />
+		<Unit filename="src/Espresso.cpp" />
+		<Unit filename="src/HouseBlend.cpp" />
+		<Unit filename="src/Mocha.cpp" />
 		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>

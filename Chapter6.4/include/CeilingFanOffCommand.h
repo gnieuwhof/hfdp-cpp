@@ -6,18 +6,15 @@
 
 #include <string>
 
-using namespace std;
-
 class CeilingFanOffCommand: public Command
 {
     public:
-        CeilingFanOffCommand();
+        CeilingFanOffCommand(CeilingFan * ceilingFan);
         virtual ~CeilingFanOffCommand();
 
-                CeilingFanOffCommand(CeilingFan * ceilingFan);
         void execute();
         void undo();
-        string toString();
+        std::string toString();
 
     protected:
         CeilingFan * ceilingFan;

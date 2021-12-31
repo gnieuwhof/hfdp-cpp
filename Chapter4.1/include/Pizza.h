@@ -4,8 +4,6 @@
 #include <string>
 #include <list>
 
-using namespace std;
-
 class Pizza
 {
     public:
@@ -16,13 +14,13 @@ class Pizza
         void bake();
         virtual void cut();
         void box();
-        string getName();
+        std::string getName();
 
     protected:
-        string name;
-        string dough;
-        string sauce;
-        list<string> toppings;
+        std::string name;
+        std::string dough;
+        std::string sauce;
+        std::list<std::string> toppings;
 
     private:
 };

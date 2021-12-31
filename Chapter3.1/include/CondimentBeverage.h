@@ -5,15 +5,13 @@
 
 #include <iostream>
 
-using namespace std;
-
 class CondimentBeverage: public Beverage
 {
     public:
         CondimentBeverage();
         virtual ~CondimentBeverage();
 
-        virtual string getDescription() = 0;
+        virtual std::string getDescription() = 0;
 
     protected:
 

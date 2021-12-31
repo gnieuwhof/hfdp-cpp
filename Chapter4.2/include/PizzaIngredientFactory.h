@@ -19,7 +19,7 @@ class PizzaIngredientFactory
         virtual Dough * createDough() = 0;
         virtual Sauce * createSauce() = 0;
         virtual Cheese * createCheese() = 0;
-        virtual list<Veggies *> createVeggies() = 0;
+        virtual std::list<Veggies *> createVeggies() = 0;
         virtual Pepperoni * createPepperoni() = 0;
         virtual Clams * createClam() = 0;
 

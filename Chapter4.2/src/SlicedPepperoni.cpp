@@ -11,7 +11,7 @@ SlicedPepperoni::~SlicedPepperoni()
 }
 
 
-string SlicedPepperoni::toString()
+std::string SlicedPepperoni::toString()
 {
     return "Sliced Pepperoni";
 }

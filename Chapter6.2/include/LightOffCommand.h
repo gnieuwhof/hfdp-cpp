@@ -9,12 +9,11 @@
 class LightOffCommand: public Command
 {
     public:
-        LightOffCommand();
+        LightOffCommand(Light * light);
         virtual ~LightOffCommand();
 
-                LightOffCommand(Light * light);
         void execute();
-        string toString();
+        std::string toString();
 
     protected:
 

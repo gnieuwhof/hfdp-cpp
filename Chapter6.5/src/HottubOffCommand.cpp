@@ -24,7 +24,7 @@ void HottubOffCommand::undo()
     hottub->circulate();
 }
 
-string HottubOffCommand::toString()
+std::string HottubOffCommand::toString()
 {
     return "HottubOffCommand";
 }

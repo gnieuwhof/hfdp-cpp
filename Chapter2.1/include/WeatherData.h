@@ -6,8 +6,6 @@
 
 #include <list>
 
-using namespace std;
-
 class WeatherData: public Subject
 {
     public:
@@ -23,7 +21,7 @@ class WeatherData: public Subject
     protected:
 
     private:
-        list<Observer *> observers;
+        std::list<Observer *> observers;
         float temperature;
         float humidity;
         float pressure;

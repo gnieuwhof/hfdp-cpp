@@ -11,7 +11,7 @@ PizzaStore::~PizzaStore()
 }
 
 
-Pizza * PizzaStore::orderPizza(string type)
+Pizza * PizzaStore::orderPizza(std::string type)
 {
     Pizza * pizza;
 

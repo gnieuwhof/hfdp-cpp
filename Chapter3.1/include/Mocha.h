@@ -4,16 +4,14 @@
 #include "CondimentBeverage.h"
 #include "Beverage.h"
 
-#include <iostream>
-
-using namespace std;
+#include <string>
 
 class Mocha: public CondimentBeverage
 {
     public:
         Mocha(Beverage * beverage);
         virtual ~Mocha();
-        string getDescription();
+        std::string getDescription();
         double cost();
 
     protected:

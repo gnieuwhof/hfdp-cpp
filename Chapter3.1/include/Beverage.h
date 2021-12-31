@@ -3,8 +3,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 class Beverage
 {
     public:
@@ -13,10 +11,10 @@ class Beverage
         Beverage();
         virtual ~Beverage();
 
-        virtual string getDescription();
+        virtual std::string getDescription();
 
     protected:
-        string description;
+        std::string description;
 
     private:
 };

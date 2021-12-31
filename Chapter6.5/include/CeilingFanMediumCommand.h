@@ -6,8 +6,6 @@
 
 #include <string>
 
-using namespace std;
-
 class CeilingFanMediumCommand: public Command
 {
     public:
@@ -16,7 +14,7 @@ class CeilingFanMediumCommand: public Command
 
         void execute();
         void undo();
-        string toString();
+        std::string toString();
 
     protected:
         CeilingFan * ceilingFan;

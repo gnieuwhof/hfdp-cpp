@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 ChicagoStyleCheesePizza::ChicagoStyleCheesePizza()
 {
     name = "Chicago Style Deep Dish Cheese Pizza";
@@ -21,5 +19,5 @@ ChicagoStyleCheesePizza::~ChicagoStyleCheesePizza()
 
 void ChicagoStyleCheesePizza::cut()
 {
-    cout << "Cutting the pizza into square slices" << endl;
+    std::cout << "Cutting the pizza into square slices" << std::endl;
 }

@@ -21,7 +21,7 @@ void GarageDoorDownCommand::undo()
     garageDoor->up();
 }
 
-string GarageDoorDownCommand::toString()
+std::string GarageDoorDownCommand::toString()
 {
     return "GarageDoorDownCommand";
 }

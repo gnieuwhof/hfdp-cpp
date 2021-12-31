@@ -5,15 +5,13 @@
 
 #include <string>
 
-using namespace std;
-
 class SimplePizzaFactory
 {
     public:
         SimplePizzaFactory();
         virtual ~SimplePizzaFactory();
 
-        virtual Pizza * createPizza(string type);
+        virtual Pizza * createPizza(std::string type);
 
     protected:
 

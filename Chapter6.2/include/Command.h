@@ -3,8 +3,6 @@
 
 #include <string>
 
-using namespace std;
-
 class Command
 {
     public:
@@ -12,7 +10,7 @@ class Command
         virtual ~Command();
 
         virtual void execute(){};
-        virtual string toString() = 0;
+        virtual std::string toString() = 0;
 
     protected:
 

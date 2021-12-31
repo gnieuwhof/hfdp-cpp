@@ -6,8 +6,6 @@
 
 #include <string>
 
-using namespace std;
-
 class GarageDoorUpCommand: public Command
 {
     public:
@@ -16,7 +14,7 @@ class GarageDoorUpCommand: public Command
 
         void execute();
         void undo();
-        string toString();
+        std::string toString();
 
     protected:
 

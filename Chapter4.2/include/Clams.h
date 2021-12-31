@@ -3,15 +3,13 @@
 
 #include <string>
 
-using namespace std;
-
 class Clams
 {
     public:
         Clams();
         virtual ~Clams();
 
-        virtual string toString() = 0;
+        virtual std::string toString() = 0;
 
     protected:
 

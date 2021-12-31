@@ -13,15 +13,22 @@ NYPizzaStore::~NYPizzaStore()
 }
 
 
-Pizza * NYPizzaStore::createPizza(string item)
+Pizza * NYPizzaStore::createPizza(std::string item)
 {
-    if (item == "cheese"){
+    if (item == "cheese")
+    {
         return new NYStyleCheesePizza;
-    } else if (item == "veggie"){
+    }
+    else if (item == "veggie")
+    {
 //                return new NYStyleVeggiePizza;
-    } else if (item == "clam"){
+    }
+    else if (item == "clam")
+    {
 //                return new NYStyleClamPizza;
-    } else if (item == "pepperoni"){
+    }
+    else if (item == "pepperoni")
+    {
 //                return new NYStylePepperoniPizza;
     }
     return 0;

@@ -5,17 +5,14 @@
 
 #include <string>
 
-using namespace std;
-
 class MacroCommand: public Command
 {
     public:
-        MacroCommand();
+        MacroCommand(Command** commands, int numberOfCommands);
         virtual ~MacroCommand();
 
-                MacroCommand(Command** commands, int numberOfCommands);
         void execute();
-        string toString();
+        std::string toString();
 
     protected:
 

@@ -3,21 +3,18 @@
 
 #include <string>
 
-using namespace std;
-
 class TV
 {
     public:
-        TV();
+        TV(std::string location);
         virtual ~TV();
 
-                TV(string location);
         void on();
         void off();
         void setChannel(int channel);
 
     protected:
-        string location;
+        std::string location;
         int channel;
 
     private:

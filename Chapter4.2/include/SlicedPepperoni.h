@@ -5,15 +5,13 @@
 
 #include <string>
 
-using namespace std;
-
 class SlicedPepperoni: public Pepperoni
 {
     public:
         SlicedPepperoni();
         virtual ~SlicedPepperoni();
 
-        string toString();
+        std::string toString();
 
     protected:
 

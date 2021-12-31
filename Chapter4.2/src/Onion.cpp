@@ -11,7 +11,7 @@ Onion::~Onion()
 }
 
 
-string Onion::toString()
+std::string Onion::toString()
 {
     return "Onion";
 }

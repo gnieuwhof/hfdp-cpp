@@ -16,8 +16,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
     RemoteControlWithUndo * remoteControl = new RemoteControlWithUndo;
@@ -47,10 +45,10 @@ int main()
     remoteControl->setCommand(0, partyOnMacro, partyOffMacro);
 
 
-    cout << remoteControl->toString() << endl;
-    cout << "--- Pushing Macro On ---" << endl;
+    std::cout << remoteControl->toString() << std::endl;
+    std::cout << "--- Pushing Macro On ---" << std::endl;
     remoteControl->onButtonWasPushed(0);
-    cout << "--- Pushing Macro Off ---" << endl;
+    std::cout << "--- Pushing Macro Off ---" << std::endl;
     remoteControl->offButtonWasPushed(0);
 
     return 0;
